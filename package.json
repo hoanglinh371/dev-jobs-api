@@ -1,0 +1,22 @@
+{
+  "name": "dev-jobs-api",
+  "version": "1.0.0",
+  "description": "A api for dev-jobs-web-app project",
+  "main": "src/server.js",
+  "repository": "https://github.com/hoanglinh371/dev-jobs-api.git",
+  "author": "hoanglinh371 <hoanglinh371.utc@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "mongoose": "^6.9.2",
+    "morgan": "^1.10.0"
+  }
+}
