@@ -1,4 +1,4 @@
-const Job = require('../models/job.shema');
+const Job = require('../models/job.model');
 const APIFeature = require('../utils/APIFeature');
 const AppError = require('../utils/AppError');
 
