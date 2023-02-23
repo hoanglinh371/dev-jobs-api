@@ -1,5 +1,6 @@
 const express = require('express');
 
+const { protect, restrictTo } = require('../middlewares/auth.middleware');
 const {
   httpGetJobs,
   httpCreateJob,
@@ -15,6 +16,6 @@ jobRouter
   .route('/:_id')
   .get(httpGetJobById)
   .patch(httpUpdateJob)
-  .delete(httpDeleteJob);
+  .delete(protect, restrictTo('admin', 'hr'), httpDeleteJob);
 
 module.exports = jobRouter;
